@@ -2,9 +2,17 @@
   "name": "javascript-cheatsheet",
   "version": "1.0.0",
   "scripts": {
-    "embed": "embedme"
+    "embed": "embedme README.md --source-root sandbox",
+    "lint": "npx eslint sandbox/**",
+    "lint:fix": "npx eslint sandbox/** --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "embedme": "^1.22.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.0"
   }
 }

@@ -1,0 +1,22 @@
+name: EMBED SCRIPTS INTO MARKDOWN
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Start Job
+        run: echo Started build
+      - name: Install modules
+        run: npm install
+      - name: embed
+        run: npm run embed
