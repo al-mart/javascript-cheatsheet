@@ -5,3 +5,5 @@ console.log(x);
 x = 'Hello';
 
 console.log(x);
+console.log(x);
+console.log(x);
