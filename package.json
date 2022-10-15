@@ -1,0 +1,10 @@
+{
+  "name": "javascript-cheatsheet",
+  "version": "1.0.0",
+  "scripts": {
+    "embed": "embedme"
+  },
+  "dependencies": {
+    "embedme": "^1.22.1"
+  }
+}
